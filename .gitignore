@@ -1,0 +1,4 @@
+config.py
+capstone
+__pycache__/
+scripts/__pycache__
