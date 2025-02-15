@@ -1,0 +1,4 @@
+patient_id,exonic,UTR3,UTR5,ncRNA_exonic,ncRNA_intronic,upstream,downstream,intronic,splicing
+RAW-20D0006FP,1,0,0,0,0,0,0,21,0
+RAW-21A0008MP,0,0,0,0,0,0,0,2,0
+RAW-21E0003FP,1,1,0,0,0,0,0,3,0
