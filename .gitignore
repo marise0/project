@@ -5,3 +5,4 @@ scripts/__pycache__
 data
 output
 bcftools
+multi-sampleANNOVAR.csv
