@@ -6,10 +6,9 @@ source <(python -m scripts.export)
 # Path to the input VCF file
 vcf_file=$VCF_PATH"/CAGI_exome_hg19.gatk.snps.vcf.gz"
 
-# Loop through the sample names
-rsids=("rs2066844" "rs2066845" "rs5743271" "rs41313262" "rs76418789" "rs104895444" "rs104895467" "rs34536443" "rs2476601" "rs11209026" "rs3764147")
+rsIDs=("rs2241880" "rs2066844" "rs2066845" "rs2476601" "rs3764147" "rs5743271" "rs41313262" "rs13107325" "rs4077515" "rs492602" "rs138629813" "rs16844401" "rs41267765" "rs34215892" "rs61759893" "rs56143179" "rs104895443" "rs2228015" "rs73166641")
 
-rsid_filter=$(printf 'ID=="%s" || ' "${rsids[@]}")
+rsid_filter=$(printf 'ID=="%s" || ' "${rsIDs[@]}")
 rsid_filter=${rsid_filter% || }  # Remove trailing ' || '
 
 for sample in $(bcftools query -l $vcf_file); do
