@@ -6,3 +6,8 @@ data
 output
 bcftools
 multi-sampleANNOVAR.csv
+.nextflow.log
+.nextflow.log.1
+.nextflow/
+nextflow.config
+work/
