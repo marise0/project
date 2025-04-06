@@ -12,3 +12,4 @@ multi-sampleANNOVAR.csv
 nextflow.config
 work/
 pgsc_HGDP+1kGP_v1.tar.zst
+scripts/replay_pid591324.log
