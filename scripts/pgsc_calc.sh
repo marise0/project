@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Run Python script to export environment variables (like VCF_PATH)
+# Run Python script to export environment variables
 source <(python -m scripts.export)
 
 # Run the pgsc_calc Nextflow pipeline
@@ -10,5 +10,3 @@ nextflow run pgscatalog/pgsc_calc \
     --scorefile "$VCF_PATH/PRS.txt" \
     --target_build GRCh37 \
     --outdir "$OUTPUT_PATH/results_ancestry"  
-
-#    --run_ancestry pgsc_HGDP+1kGP_v1.tar.zst\

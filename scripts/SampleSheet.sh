@@ -2,7 +2,6 @@
 
 # Run Python script to export environment variables
 source <(python -m scripts.export)
-# Define your input and output paths
 vcf_file="$VCF_PATH/CAGI_exome_hg19.gatk.snps.vcf.gz"
 output_vcf="$VCF_PATH/filteredMultisample.vcf.gz"
 # List of rsIDs
@@ -12,7 +11,6 @@ rsIDs=(
   "rs138629813" "rs16844401" "rs41267765" "rs34215892" "rs61759893"
   "rs56143179" "rs104895443" "rs2228015" "rs73166641"
 )
-
 # Convert the rsIDs into a filter expression: ID=="rs1" || ID=="rs2" ...
 filter_expr=$(printf 'ID=="%s" || ' "${rsIDs[@]}")
 filter_expr=${filter_expr% || }  # Remove trailing " || "
