@@ -9,4 +9,5 @@ nextflow run pgscatalog/pgsc_calc \
     --input "$VCF_PATH/samplesheet.csv" \
     --scorefile "$VCF_PATH/PRS.txt" \
     --target_build GRCh37 \
-    --outdir "$OUTPUT_PATH/results_ancestry"  
+    --outdir "$OUTPUT_PATH/results"  
+    
